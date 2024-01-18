@@ -1,0 +1,109 @@
+h1{
+    color:rgb(43, 27, 23); /*  midnight */ 
+}
+
+body {
+    background-color: rgb(240, 239, 231);
+    font-family: 'Sometype Mono', monospace;
+    margin: 0;
+    padding: 5%;
+}
+.head-panel {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+}
+.header{
+    top: 0;
+    background-color:  rgb(43, 27, 23);
+}
+.wrapper {
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.wrapper div {
+    padding-top: 5%;
+    padding-left: 10%;
+}
+  
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(43, 27, 23);
+}
+li {
+    float:  left;
+}
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px; 
+    color: rgb(240, 239, 231);
+
+}
+.links {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    padding-left: 10%;
+    font-size: larger;
+    border: 10 px solid rgb(43, 27, 23);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.links a {
+    text-decoration: none;
+    color:rgb(43, 27, 23);
+}
+
+.links a:hover {
+    font-size: x-large;
+}
+
+.contact {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding-right: 10%;
+    width: 10%;
+    font-size: larger;
+
+}
+
+.contact a {
+    color: rgb(43, 27, 23);
+    text-decoration: none;
+}
+
+.contact a:hover{
+    font-size: x-large;
+}
+
+.blogpost {
+    
+}
+
+.card{
+    float: left;
+    width: 33%;
+    padding: 10px;
+    height: 100px; /*remove after test*/
+    background-color: blue;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: border-box;
+
+}
