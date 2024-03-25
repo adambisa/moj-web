@@ -49,7 +49,7 @@ li a {
 }
 .links {
     margin: auto;
-    width: 50%;
+    width: 33%;
     padding: 10px;
     padding-left: 10%;
     font-size: larger;
@@ -57,8 +57,6 @@ li a {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 100%;
-
 }
 
 .links a {
@@ -89,21 +87,49 @@ li a {
     font-size: x-large;
 }
 
-.blogpost {
-    
-}
-
 .card{
-    float: left;
-    width: 33%;
-    padding: 10px;
-    height: 100px; /*remove after test*/
-    background-color: blue;
+/* From https://css.glass */
+background: rgba(43, 27, 23, 0.37);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+/*border: 1px solid rgba(43, 27, 23, 0.3);*/
+text-align: center;
+height: 5;
+padding-top: 1%;
+padding-bottom: 1%;
 }
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-    box-sizing: border-box;
-
+.card h2 {
+    color :rgb(240, 239, 231);
+    text-decoration: none;
+    font-size: larger;
 }
+.card:hover{
+    text-transform: uppercase;
+}
+.changed{
+    text-decoration: none;
+}
+.changed p {
+    color: black;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(43, 27, 23);
+    color: white;
+    text-align: center;
+ }
+ .footer ul li {
+    list-style-type: none;
+ }
+ .footer ul li a:hover{
+    font-size: larger;
+ }
+ .footer ul :last-child{
+    right: 0;
+    float: right;
+ }
