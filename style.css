@@ -1,138 +1,130 @@
-h1{
-    color:rgb(43, 27, 23); /*  midnight */ 
-}
+@import "reset.css";
 
 body {
-    background-color: rgb(240, 239, 231);
-    font-family: 'Sometype Mono', monospace;
-    margin: 0;
-    padding: 5%;
-}
-.head-panel {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    text-align: center;
-    font-size: xx-large;
-}
-.header{
-    top: 0;
-    background-color:  rgb(43, 27, 23);
-}
-.wrapper {
-    padding-top: 5%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.wrapper div {
-    padding-top: 5%;
-    padding-left: 10%;
-}
-  
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(43, 27, 23);
-}
-li {
-    float:  left;
-}
-li a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 16px; 
-    color: rgb(240, 239, 231);
+  /* Colors */
+  background-color: rgb(240, 239, 231);
 
-}
-.links {
-    margin: auto;
-    width: 33%;
-    padding: 10px;
-    padding-left: 10%;
-    font-size: larger;
-    border: 10 px solid rgb(43, 27, 23);
-    position: fixed;
-    left: 0;
-    bottom: 0;
+  /* Text/Fonts */
+  font-family: "Sometype Mono", monospace;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.links a {
-    text-decoration: none;
-    color:rgb(43, 27, 23);
+main {
+  padding: 1.2rem;
 }
 
-.links a:hover {
-    font-size: x-large;
+/** -------------------------------- */
+/** ------------- INTRO ------------ */
+/** -------------------------------- */
+
+.intro {
+  text-align: center;
+  margin: 3.2rem 0;
 }
 
-.contact {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    padding-right: 10%;
-    width: 10%;
-    font-size: larger;
+.intro__title {
+  /* Spacing */
+  margin-bottom: 1.2rem;
 
-}
+  /* Colors */
+  color: rgb(43, 27, 23);
 
-.contact a {
-    color: rgb(43, 27, 23);
-    text-decoration: none;
-}
-
-.contact a:hover{
-    font-size: x-large;
+  /* Text/Fonts */
+  font-size: 4.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1;
 }
 
-.card{
-/* From https://css.glass */
-background: rgba(43, 27, 23, 0.37);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-/*border: 1px solid rgba(43, 27, 23, 0.3);*/
-text-align: center;
-height: 5;
-padding-top: 1%;
-padding-bottom: 1%;
+.intro__subtitle {
+  /* Text/Fonts */
+  font-size: 2rem;
 }
-.card h2 {
-    color :rgb(240, 239, 231);
-    text-decoration: none;
-    font-size: larger;
+
+/** -------------------------------- */
+/** ----------- PROJECTS ----------- */
+/** -------------------------------- */
+
+.projects {
+  padding: 0 1rem;
 }
-.card:hover{
-    text-transform: uppercase;
+
+.project__card {
+  /* Sizing */
+  padding: 1.2rem 2.4rem;
+  border-radius: 16px;
+
+  /* Colors */
+  background: rgba(43, 27, 23, 0.37);
+
+  /* Text/Fonts */
+  text-align: center;
+
+  /* Effects/Animations */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
-.changed{
-    text-decoration: none;
+
+.project__card:hover {
+  /* Text/Fonts */
+  text-transform: uppercase;
 }
-.changed p {
-    color: black;
+
+.project__link {
+  /* Text/Fonts */
+  text-decoration: none;
 }
+
+.project__title {
+  color: rgb(240, 239, 231);
+  text-decoration: none;
+  font-size: larger;
+}
+
+.project__description {
+  /* Colors */
+  color: black;
+}
+
+/** -------------------------------- */
+/** ------------ FOOTER ------------ */
+/** -------------------------------- */
+
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2cqb.5;
-    background-color:rgba(43, 27, 23);
-    color: white;
-    text-align: center;
- }
- .f-item a {
-    text-decoration: none;
-    float: left;
-    color: antiquewhite;
-    padding: 0.8rem;
+  /* Sizing */
+  width: 100%;
+  height: 3rem;
+
+  /* Flex/Grid */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+
+  /* Colors */
+  background-color: rgba(43, 27, 23);
+  color: white;
+
+  /* Text/Fonts */
 }
 
- .cont :last-child{
-    float: right;
-    color: red;
+.footer a:hover {
+  font-size: 1.4rem;
 }
 
+@media (max-width: 36rem) {
+  .projects {
+    padding: 0;
+  }
+  html {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 24rem) {
+  .project__card {
+    padding: 1.2rem 1.2rem;
+  }
+}
